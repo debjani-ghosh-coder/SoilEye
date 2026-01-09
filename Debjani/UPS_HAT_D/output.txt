@@ -1,0 +1,445 @@
+Load Voltage:   3.924 V
+Current:       -1.406 A
+Power:          5.529 W
+Percent:       77.0%
+
+Load Voltage:   3.936 V
+Current:       -1.182 A
+Power:          4.773 W
+Percent:       78.0%
+
+Load Voltage:   3.936 V
+Current:       -1.179 A
+Power:          4.639 W
+Percent:       78.0%
+
+Load Voltage:   3.944 V
+Current:       -1.056 A
+Power:          4.130 W
+Percent:       78.7%
+
+Load Voltage:   3.944 V
+Current:       -1.053 A
+Power:          4.151 W
+Percent:       78.7%
+
+Load Voltage:   3.940 V
+Current:       -1.184 A
+Power:          4.663 W
+Percent:       78.3%
+
+Load Voltage:   3.944 V
+Current:       -1.054 A
+Power:          4.185 W
+Percent:       78.7%
+
+Load Voltage:   3.944 V
+Current:       -1.057 A
+Power:          4.151 W
+Percent:       78.7%
+
+Load Voltage:   3.940 V
+Current:       -1.109 A
+Power:          4.371 W
+Percent:       78.3%
+
+Load Voltage:   3.944 V
+Current:       -1.053 A
+Power:          4.279 W
+Percent:       78.7%
+
+Load Voltage:   3.940 V
+Current:       -1.110 A
+Power:          4.365 W
+Percent:       78.3%
+
+Load Voltage:   3.944 V
+Current:       -1.053 A
+Power:          4.151 W
+Percent:       78.7%
+
+Load Voltage:   3.940 V
+Current:       -1.111 A
+Power:          4.340 W
+Percent:       78.3%
+
+Load Voltage:   3.940 V
+Current:       -1.109 A
+Power:          4.365 W
+Percent:       78.3%
+
+Load Voltage:   3.940 V
+Current:       -1.051 A
+Power:          4.139 W
+Percent:       78.3%
+
+Load Voltage:   3.928 V
+Current:       -1.363 A
+Power:          5.560 W
+Percent:       77.3%
+
+Load Voltage:   3.932 V
+Current:       -1.234 A
+Power:          4.849 W
+Percent:       77.7%
+
+Load Voltage:   3.932 V
+Current:       -1.234 A
+Power:          4.849 W
+Percent:       77.7%
+
+Load Voltage:   3.940 V
+Current:       -1.110 A
+Power:          4.371 W
+Percent:       78.3%
+
+Load Voltage:   3.936 V
+Current:       -1.173 A
+Power:          4.615 W
+Percent:       78.0%
+
+Load Voltage:   3.936 V
+Current:       -1.164 A
+Power:          4.578 W
+Percent:       78.0%
+
+Load Voltage:   3.940 V
+Current:       -1.052 A
+Power:          4.145 W
+Percent:       78.3%
+
+Load Voltage:   3.940 V
+Current:       -1.108 A
+Power:          4.365 W
+Percent:       78.3%
+
+Load Voltage:   3.936 V
+Current:       -1.113 A
+Power:          4.380 W
+Percent:       78.0%
+
+Load Voltage:   3.936 V
+Current:       -1.110 A
+Power:          4.420 W
+Percent:       78.0%
+
+Load Voltage:   3.932 V
+Current:       -1.176 A
+Power:          4.624 W
+Percent:       77.7%
+
+Load Voltage:   3.936 V
+Current:       -1.109 A
+Power:          4.365 W
+Percent:       78.0%
+
+Load Voltage:   3.940 V
+Current:       -1.064 A
+Power:          4.139 W
+Percent:       78.3%
+
+Load Voltage:   3.932 V
+Current:       -1.173 A
+Power:          4.609 W
+Percent:       77.7%
+
+Load Voltage:   3.936 V
+Current:       -1.110 A
+Power:          4.371 W
+Percent:       78.0%
+
+Load Voltage:   3.936 V
+Current:       -1.110 A
+Power:          4.218 W
+Percent:       78.0%
+
+Load Voltage:   3.936 V
+Current:       -1.118 A
+Power:          4.398 W
+Percent:       78.0%
+
+Load Voltage:   3.936 V
+Current:       -1.037 A
+Power:          4.081 W
+Percent:       78.0%
+
+Load Voltage:   3.936 V
+Current:       -1.112 A
+Power:          4.386 W
+Percent:       78.0%
+
+Load Voltage:   3.944 V
+Current:       -0.964 A
+Power:          3.801 W
+Percent:       78.7%
+
+Load Voltage:   3.944 V
+Current:       -0.989 A
+Power:          3.856 W
+Percent:       78.7%
+
+Load Voltage:   3.940 V
+Current:       -1.034 A
+Power:          4.075 W
+Percent:       78.3%
+
+Load Voltage:   3.944 V
+Current:       -0.967 A
+Power:          3.810 W
+Percent:       78.7%
+
+Load Voltage:   3.936 V
+Current:       -1.113 A
+Power:          4.426 W
+Percent:       78.0%
+
+Load Voltage:   3.940 V
+Current:       -1.077 A
+Power:          4.301 W
+Percent:       78.3%
+
+Load Voltage:   3.944 V
+Current:       -0.966 A
+Power:          3.810 W
+Percent:       78.7%
+
+Load Voltage:   3.940 V
+Current:       -1.016 A
+Power:          4.029 W
+Percent:       78.3%
+
+Load Voltage:   3.936 V
+Current:       -1.113 A
+Power:          4.386 W
+Percent:       78.0%
+
+Load Voltage:   3.944 V
+Current:       -0.965 A
+Power:          3.804 W
+Percent:       78.7%
+
+Load Voltage:   3.944 V
+Current:       -0.965 A
+Power:          3.810 W
+Percent:       78.7%
+
+Load Voltage:   3.940 V
+Current:       -1.023 A
+Power:          4.036 W
+Percent:       78.3%
+
+Load Voltage:   3.936 V
+Current:       -1.125 A
+Power:          4.426 W
+Percent:       78.0%
+
+Load Voltage:   3.940 V
+Current:       -1.022 A
+Power:          4.026 W
+Percent:       78.3%
+
+Load Voltage:   3.940 V
+Current:       -1.036 A
+Power:          4.081 W
+Percent:       78.3%
+
+Load Voltage:   3.940 V
+Current:       -1.074 A
+Power:          4.231 W
+Percent:       78.3%
+
+Load Voltage:   3.940 V
+Current:       -1.015 A
+Power:          4.029 W
+Percent:       78.3%
+
+Load Voltage:   3.936 V
+Current:       -1.116 A
+Power:          4.389 W
+Percent:       78.0%
+
+Load Voltage:   3.944 V
+Current:       -0.966 A
+Power:          3.810 W
+Percent:       78.7%
+
+Load Voltage:   3.944 V
+Current:       -0.965 A
+Power:          3.810 W
+Percent:       78.7%
+
+Load Voltage:   3.940 V
+Current:       -1.023 A
+Power:          4.029 W
+Percent:       78.3%
+
+Load Voltage:   3.940 V
+Current:       -1.032 A
+Power:          4.066 W
+Percent:       78.3%
+
+Load Voltage:   3.944 V
+Current:       -0.978 A
+Power:          3.804 W
+Percent:       78.7%
+
+Load Voltage:   3.944 V
+Current:       -0.966 A
+Power:          3.810 W
+Percent:       78.7%
+
+Load Voltage:   3.944 V
+Current:       -0.965 A
+Power:          3.804 W
+Percent:       78.7%
+
+Load Voltage:   3.944 V
+Current:       -0.960 A
+Power:          3.825 W
+Percent:       78.7%
+
+Load Voltage:   3.940 V
+Current:       -0.965 A
+Power:          3.801 W
+Percent:       78.3%
+
+Load Voltage:   3.940 V
+Current:       -1.022 A
+Power:          4.026 W
+Percent:       78.3%
+
+Load Voltage:   3.944 V
+Current:       -0.965 A
+Power:          3.816 W
+Percent:       78.7%
+
+Load Voltage:   3.944 V
+Current:       -0.965 A
+Power:          3.804 W
+Percent:       78.7%
+
+Load Voltage:   3.944 V
+Current:       -0.968 A
+Power:          3.816 W
+Percent:       78.7%
+
+Load Voltage:   3.944 V
+Current:       -0.965 A
+Power:          3.825 W
+Percent:       78.7%
+
+Load Voltage:   3.944 V
+Current:       -0.968 A
+Power:          3.816 W
+Percent:       78.7%
+
+Load Voltage:   3.940 V
+Current:       -0.968 A
+Power:          3.816 W
+Percent:       78.3%
+
+Load Voltage:   3.940 V
+Current:       -1.020 A
+Power:          4.020 W
+Percent:       78.3%
+
+Load Voltage:   3.936 V
+Current:       -1.109 A
+Power:          4.365 W
+Percent:       78.0%
+
+Load Voltage:   3.940 V
+Current:       -0.961 A
+Power:          3.850 W
+Percent:       78.3%
+
+Load Voltage:   3.944 V
+Current:       -0.965 A
+Power:          3.810 W
+Percent:       78.7%
+
+Load Voltage:   3.944 V
+Current:       -0.966 A
+Power:          3.810 W
+Percent:       78.7%
+
+Load Voltage:   3.944 V
+Current:       -0.966 A
+Power:          3.810 W
+Percent:       78.7%
+
+Load Voltage:   3.940 V
+Current:       -0.966 A
+Power:          3.804 W
+Percent:       78.3%
+
+Load Voltage:   3.940 V
+Current:       -1.016 A
+Power:          3.999 W
+Percent:       78.3%
+
+Load Voltage:   3.940 V
+Current:       -1.023 A
+Power:          4.026 W
+Percent:       78.3%
+
+Load Voltage:   3.940 V
+Current:       -0.966 A
+Power:          3.801 W
+Percent:       78.3%
+
+Load Voltage:   3.940 V
+Current:       -0.966 A
+Power:          3.804 W
+Percent:       78.3%
+
+Load Voltage:   3.940 V
+Current:       -0.965 A
+Power:          3.801 W
+Percent:       78.3%
+
+Load Voltage:   3.940 V
+Current:       -0.978 A
+Power:          3.801 W
+Percent:       78.3%
+
+Load Voltage:   3.940 V
+Current:       -0.965 A
+Power:          3.801 W
+Percent:       78.3%
+
+Load Voltage:   3.936 V
+Current:       -1.081 A
+Power:          4.255 W
+Percent:       78.0%
+
+Load Voltage:   3.940 V
+Current:       -0.965 A
+Power:          3.804 W
+Percent:       78.3%
+
+Load Voltage:   3.940 V
+Current:       -0.965 A
+Power:          3.801 W
+Percent:       78.3%
+
+Load Voltage:   3.940 V
+Current:       -0.966 A
+Power:          3.804 W
+Percent:       78.3%
+
+Load Voltage:   3.940 V
+Current:       -0.970 A
+Power:          3.819 W
+Percent:       78.3%
+
+Load Voltage:   3.936 V
+Current:       -1.018 A
+Power:          4.005 W
+Percent:       78.0%
+
+Load Voltage:   3.932 V
+Current:       -1.151 A
+Power:          4.514 W
+Percent:       77.7%
+
