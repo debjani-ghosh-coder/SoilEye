@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Details</title>
+    <style>
+        body{
+            background-color: #000; /* black */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #0eff00; /* fluorescent green */
+        }
+
+        h1{
+            background-color: #333;
+            color: #0eff00;
+            padding: 20px;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        form{
+            background-color: #000;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            margin: 50px auto;
+            max-width: 500px;
+            padding: 20px;
+            position: relative;
+        }
+
+        form label{
+            display: block;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        form input[type="text"], form input[type="email"], form input[type="file"]{
+            border: none;
+            border-radius: 3px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            font-size: 16px;
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+            background-color: #1a1a1a;
+            color: #0eff00;
+        }
+
+        form input[type="submit"]{
+            background-color: #2cb814;
+            border: none;
+            border-radius: 3px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        form input[type="submit"]:hover{
+            background-color: #555;
+        }
+
+        form .error {
+            color: #f00;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        form p{
+            color: #fff;
+            font-size: 14px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        form span{
+            color: #f00;
+            font-size: 12px;
+        }
+
+        .subheading {
+            text-align: center; /* center align the text */
+            font-size: 20px; /* adjust the font size */
+            font-weight: bold; /* adjust the font weight */
+            margin-top: 10px; /* add some space between the heading and the form */
+            color: #0eff00;
+        }
+
+        /* Loader Styles */
+        #loader {
+            border: 16px solid #f3f3f3; /* Light grey */
+            border-top: 16px solid #2cb814; /* Green */
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 2s linear infinite;
+            margin: 20px auto;
+            display: none;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Soileye</h1>
+    <h2 class="subheading">Empowering Farmers for a Sustainable Future: Soil Health Monitoring and Climate-Smart Agriculture</h2>
+    <form id="soilForm" method="post" action="submitImproved1.php" enctype="multipart/form-data" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        <div id="nameError" class="error"></div>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <div id="emailError" class="error"></div>
+
+        <label for="address">Address:</label>
+        <input type="text" name="address" id="address" required>
+        <div id="addressError" class="error"></div>
+
+        <label for="location">Location (Latitude and Longitude separated by space):</label>
+        <input type="text" name="location" id="location" required>
+        <div id="locationError" class="error"></div>
+
+        <label for="survey_no">Khasra number:</label>
+        <input type="text" name="survey_no" id="survey_no" required>
+        <div id="surveyError" class="error"></div>
+
+        <label for="farm_size">Farm size (in sqft):</label>
+        <input type="text" name="farm_size" id="farm_size" required>
+        <div id="farmSizeError" class="error"></div>
+
+        <label for="crop_checkbox">Do you want to choose a crop type?</label>
+        <input type="checkbox" name="crop_checkbox" id="crop_checkbox" onclick="showCropInput()">
+
+        <div id="crop_input" style="display:none;">
+            <label for="crop_name">Crop name:</label>
+            <input type="text" name="crop_name" id="crop_name">
+            <div id="cropNameError" class="error"></div>
+        </div>
+
+        <label for="photo">Upload a JPEG photo of Soil:</label>
+        <input type="file" name="photo" id="photo" accept="image/jpeg" required>
+        <div id="photoError" class="error"></div>
+
+        <input type="submit" value="Generate Soil Health Card">
+        <div id="loader"></div>
+        <p><span>*</span> All fields are required</p>
+    </form>
+
+    <script>
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+
+        function showPosition(position) {
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+            var locationField = document.getElementById("location");
+            locationField.value = latitude + " " + longitude;
+        }
+
+        function showError(error) {
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                    alert("User denied the request for Geolocation.");
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    alert("Location information is unavailable.");
+                    break;
+                case error.TIMEOUT:
+                    alert("The request to get user location timed out.");
+                    break;
+                case error.UNKNOWN_ERROR:
+                    alert("An unknown error occurred.");
+                    break;
+            }
+        }
+
+        function showCropInput() {
+            var cropInput = document.getElementById("crop_input");
+            var cropName = document.getElementById("crop_name");
+            if (document.getElementById("crop_checkbox").checked) {
+                cropInput.style.display = "block";
+                cropName.required = true;
+            } else {
+                cropInput.style.display = "none";
+                cropName.required = false;
+                document.getElementById("cropNameError").innerText = "";
+            }
+        }
+
+        function validateForm() {
+            // Clear previous errors
+            document.getElementById("nameError").innerText = "";
+            document.getElementById("emailError").innerText = "";
+            document.getElementById("addressError").innerText = "";
+            document.getElementById("locationError").innerText = "";
+            document.getElementById("surveyError").innerText = "";
+            document.getElementById("farmSizeError").innerText = "";
+            document.getElementById("photoError").innerText = "";
+            document.getElementById("cropNameError").innerText = "";
+
+            var isValid = true;
+
+            // Validate Name
+            var name = document.getElementById("name").value.trim();
+            if (name === "") {
+                document.getElementById("nameError").innerText = "Name cannot be empty.";
+                isValid = false;
+            } else {
+                var nameParts = name.split(" ");
+                if (nameParts.length < 2 || nameParts.length > 3) {
+                    document.getElementById("nameError").innerText = "Please enter First Name and Last Name. Middle Name is optional.";
+                    isValid = false;
+                } else {
+                    // Optional: Check if all parts contain only letters
+                    for(var i=0; i<nameParts.length; i++) {
+                        if(!/^[A-Za-z]+$/.test(nameParts[i])){
+                            document.getElementById("nameError").innerText = "Name should contain only letters.";
+                            isValid = false;
+                            break;
+                        }
+                    }
+                }
+            }
+
+            // Validate Email
+            var email = document.getElementById("email").value.trim();
+            if (email === "") {
+                document.getElementById("emailError").innerText = "Email cannot be empty.";
+                isValid = false;
+            } else {
+                var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if(!emailPattern.test(email)){
+                    document.getElementById("emailError").innerText = "Please enter a valid email address.";
+                    isValid = false;
+                }
+            }
+
+            // Validate Address
+            var address = document.getElementById("address").value.trim();
+            if(address === ""){
+                document.getElementById("addressError").innerText = "Address cannot be empty.";
+                isValid = false;
+            } else if(address.indexOf(",") === -1){
+                document.getElementById("addressError").innerText = "Address should contain at least one comma.";
+                isValid = false;
+            }
+
+            // Validate Location
+            var location = document.getElementById("location").value.trim();
+            if(location === ""){
+                document.getElementById("locationError").innerText = "Location cannot be empty.";
+                isValid = false;
+            } else {
+                var locationPattern = /^-?\d+(\.\d+)?\s-?\d+(\.\d+)?$/;
+                if(!locationPattern.test(location)){
+                    document.getElementById("locationError").innerText = "Location should be in 'latitude longitude' format separated by space.";
+                    isValid = false;
+                }
+            }
+
+            // Validate Khasra Number
+            var survey_no = document.getElementById("survey_no").value.trim();
+            if(survey_no === ""){
+                document.getElementById("surveyError").innerText = "Khasra number cannot be empty.";
+                isValid = false;
+            } else if(!/^[A-Za-z0-9\-]+$/.test(survey_no)){
+                document.getElementById("surveyError").innerText = "Khasra number should contain only letters, numbers, or hyphens.";
+                isValid = false;
+            }
+
+            // Validate Farm Size
+            var farm_size = document.getElementById("farm_size").value.trim();
+            if(farm_size === ""){
+                document.getElementById("farmSizeError").innerText = "Farm size cannot be empty.";
+                isValid = false;
+            } else {
+                var farmSizePattern = /^\d+\s?sqft$/i;
+                if(!farmSizePattern.test(farm_size)){
+                    document.getElementById("farmSizeError").innerText = "Farm size should be a number followed by 'sqft'. Example: 1500 sqft";
+                    isValid = false;
+                }
+            }
+
+            // Validate Crop Name if checkbox is checked
+            if(document.getElementById("crop_checkbox").checked){
+                var crop_name = document.getElementById("crop_name").value.trim();
+                if(crop_name === ""){
+                    document.getElementById("cropNameError").innerText = "Crop name cannot be empty.";
+                    isValid = false;
+                }
+            }
+
+            // Validate Photo
+            var photoInput = document.getElementById("photo");
+            if(photoInput.files.length === 0){
+                document.getElementById("photoError").innerText = "Please upload a JPEG photo.";
+                isValid = false;
+            } else {
+                var photoFile = photoInput.files[0];
+                if(photoFile.type !== "image/jpeg") {
+                    document.getElementById("photoError").innerText = "Only JPEG images are allowed.";
+                    isValid = false;
+                }
+            }
+
+            if (isValid) {
+                // Show loader
+                document.getElementById("loader").style.display = "block";
+            }
+
+            return isValid;
+        }
+
+        // Initialize location on page load
+        window.onload = getLocation;
+    </script>
+</body>
+</html>
