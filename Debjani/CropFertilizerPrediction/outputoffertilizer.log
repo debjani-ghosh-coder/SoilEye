@@ -1,0 +1,4 @@
+/home/ggpi/.local/lib/python3.9/site-packages/sklearn/base.py:493: UserWarning: X does not have valid feature names, but MinMaxScaler was fitted with feature names
+  warnings.warn(
+The accuracy of the model in fertilizer prediction is 
+100.0
