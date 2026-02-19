@@ -1,0 +1,21 @@
+{
+  "idf.openOcdConfigs": [
+    "board/esp32h2-builtin.cfg"
+  ],
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32h2"
+  },
+  "clangd.path": "/Users/deepanshu/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clangd",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=**",
+    "--compile-commands-dir=/Users/deepanshu/Downloads/esp-zigbee-sdk-main/examples/esp_zigbee_customized_devices/customized_server/build"
+  ],
+  "idf.flashType": "UART",
+  "idf.port": "/dev/tty.usbmodem5A7A0478941",
+  "idf.monitorPort": "/dev/tty.usbmodem5A7A0478941",
+  "idf.espIdfPath": "/Users/deepanshu/esp/v5.5.2/esp-idf",
+  "idf.toolsPath": "/Users/deepanshu/.espressif",
+  "idf.pythonInstallPath": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+  "idf.currentSetup": "/Users/deepanshu/esp/v5.5.2/esp-idf"
+}

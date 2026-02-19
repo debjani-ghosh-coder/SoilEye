@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/deepanshu/Downloads/Zigbee/coordinator/build/CMakeFiles/bootloader
+/Users/deepanshu/Downloads/Zigbee/coordinator/build/CMakeFiles/bootloader.rule
+/Users/deepanshu/Downloads/Zigbee/coordinator/build/CMakeFiles/bootloader-complete.rule
+/Users/deepanshu/Downloads/Zigbee/coordinator/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/deepanshu/Downloads/Zigbee/coordinator/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/deepanshu/Downloads/Zigbee/coordinator/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/deepanshu/Downloads/Zigbee/coordinator/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/deepanshu/Downloads/Zigbee/coordinator/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/deepanshu/Downloads/Zigbee/coordinator/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/deepanshu/Downloads/Zigbee/coordinator/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
